@@ -1,0 +1,11 @@
+<launch>
+    <!-- load waypoints -->
+    <node name="map" pkg="map" type="map_node" output="screen">
+        <param name="waypoints_file" value="$(find map)/tracks" />
+        <param name="scale" value="1.0" />
+        <param name="density" value="1.0" />
+        <param name="speed"  type="double" value="20.0" />
+        <param name="road_width" type="double" value="3.75" />
+    </node>
+
+</launch>

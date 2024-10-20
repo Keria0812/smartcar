@@ -1,0 +1,14 @@
+<launch>
+    <!-- 启动simulator节点 -->
+    <!-- pkg：运行哪个pkg，type：可执行文件的名称，而name则是可以任意给出的，它覆盖了原有文件中ros::init指定的node name -->
+    <arg name="control_mode" default="1" />
+    <!-- <rosparam command="load" file="$(find vehicle_controlEV)/config/mkdir WuLingMiniEV.yaml" ns="Tesla"/> -->
+
+    <node name="vehicle_controlev_node" pkg="vehicle_controlev" type="vehicle_controlev_node" output="screen" >
+        <!-- control_mode 0:LatLon 1:LAt 2:Lon -->
+        <param name="control_mode"  type="int" value="$(arg control_mode)" />
+        <param name="driver_cali"  type="double" value="0.00" />
+        <!-- <param name="control_mode"  type="int" value="$(arg control_mode)" /> -->
+
+    </node>
+</launch>

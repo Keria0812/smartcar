@@ -1,0 +1,8 @@
+prefix=/home/xining095/Carmaker/smartcar/miniEV_grad/install
+
+Name: tf_node
+Description: Description of tf_node
+Version: 0.0.2
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

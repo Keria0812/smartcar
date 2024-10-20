@@ -1,0 +1,20 @@
+steer_ratio: 1.0 #16.43 #转向传动比
+length: 2.917
+width: 1.493
+height: 1.621
+wheel_base: 1.94  # Tesla:2.97
+rear_overhang: 0.5 # 后悬 Tesla:1.08
+front_overhang: 0.40 # 前悬 Tesla:0.92
+mass: 700 # Tesla 2108
+cf: 77747.3315 # 侧偏刚度(cornering stiffness) 一个轮胎
+cr: 77747.3315
+lf_mass: 0.0 #
+rf_mass: 0.0
+lr_mass: 0.0
+rr_mass: 0.0
+lf: 1.50 # Distance CoG to front axle[m] Tesla:1.47， 如果设置了以此为主，未设置则以lfmass为主
+lr: 1.417 # Distance CoG to rear axle[m] Tesla:1.5
+max_steering_angle: 30.0 # deg
+max_steering_speed: 20.0 #deg/s
+max_lon_acceleration: 3.0 #m/s2
+max_lon_deceleration: 3.0 #m/s2

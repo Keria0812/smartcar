@@ -1,0 +1,30 @@
+# Ts: 0.01 #sample_time
+# pred_ts: 0.0 #预瞄时间，s
+# matrix_q0: 0.05
+# matrix_q1: 0.00
+# matrix_q2: 0.1
+# matrix_q3: 0.00
+# max_iteration: 500
+Ts: 0.02 #sample_time
+pred_ts: 0.0 #预瞄时间，s
+matrix_q0: 0.02
+matrix_q1: 0.000
+matrix_q2: 0.005
+matrix_q3: 0.00
+max_iteration: 500
+# Ts: 0.02 #sample_time
+# pred_ts: 0.0 #预瞄时间，s
+# matrix_q0: 0.05
+# matrix_q1: 0.01
+# matrix_q2: 1.0
+# matrix_q3: 0.01
+# max_iteration: 500
+
+
+# Ts: 0.01 #sample_time
+# pred_ts: 0.0 #预瞄时间，s
+# matrix_q0: 0.08
+# matrix_q1: 0.000
+# matrix_q2: 0.005
+# matrix_q3: 0.00
+# max_iteration: 500

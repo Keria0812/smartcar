@@ -1,0 +1,9 @@
+Header 	   header
+time       timestamp
+int32      width
+int32      height
+float32    width_step
+float32    height_step
+int32      grid_nums
+int8[]     grid
+int8       enabled

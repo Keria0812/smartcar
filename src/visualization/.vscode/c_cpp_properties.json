@@ -1,0 +1,28 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/chenjian/catkin_project/linghang-chenjian/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/g29_force_feedback/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/iau_ros_control_E70/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/iau_ros_light/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/iau_ros_location/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/iau_ros_map/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/iau_ros_pathfollow/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/iau_ros_simulation/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/iau_ros_v2x/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/velodyne/velodyne_driver/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/velodyne/velodyne_laserscan/include/**",
+        "/home/chenjian/catkin_project/linghang-chenjian/src/velodyne/velodyne_pointcloud/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

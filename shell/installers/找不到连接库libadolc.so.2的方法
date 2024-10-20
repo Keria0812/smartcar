@@ -1,0 +1,10 @@
+使用sudo ./运行脚本文件
+如果运行节点时找不到连接库libadolc.so.2的话
+原因有两个：
+　　1.操作系统没有改共享库
+　　2.安装了该共享库，但是执行外部程序调用该共享库的时候，程序按照默认路径（/usr/lib、/lib）找不到该共享库文件
+
+解决方法：
+　　ubuntu系统的共享库一般安装在/usr/local/lib目录下，如果不确定，可以使用ls  /usr/local/lib查看里面是否有你需要的库文件
+　　然后打开/etc/ld.so.conf，在文件最后添加/usr/local/lib（或者在命令行输入echo "/usr/local/lib" >>sudo  /etc/ld.so.conf）
+　　保存退出，执行sudo ldconfig命令即可

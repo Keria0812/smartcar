@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="debug_pathfollow" type="bool" default="false" />
+    <group ns="planning">
+        <param name="planning_config_path"  type="str" value="$(find planning)/config/configs.yaml" />
+    </group>
+<param name="log_file_name" type="str" value="$(find planning)/log/safe_sim0413_4.csv" />
+
+    <node pkg="planning" type="planning_record_node" name="planning_record" output="screen" respawn="true" >
+
+
+    </node>
+
+</launch> 

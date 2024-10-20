@@ -1,0 +1,19 @@
+<!---->
+<launch>
+    <!-- 启动visualization节点 -->
+    <!-- pkg：运行哪个pkg，type：可执行文件的名称，而name则是可以任意给出的，它覆盖了原有文件中ros::init指定的node name -->
+
+    <!-- <node name="show_trajectory" pkg="show_trajectory" type="by_marker_list" output="screen"> -->
+    <!-- </node> -->
+    
+    <include file="$(find vehicle_show)/launch/lexus.launch">
+    </include>
+
+    <!--tf_node-->
+    <node name="tf_node" pkg="tf_node" type="tf_node" output="screen"/>
+
+    <!--启动rviz-->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find show_trajectory)/launch/plan.rviz" required="false" respawn="true" />
+    <!-- <node pkg="planning" type="planning_node" name="planning" output="screen" launch-prefix="gnome-terminal -x gdb -ex run args ">    -->
+
+</launch>

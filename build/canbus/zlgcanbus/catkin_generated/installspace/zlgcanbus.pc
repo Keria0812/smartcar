@@ -1,0 +1,8 @@
+prefix=/home/xining095/Carmaker/smartcar/miniEV_grad/install
+
+Name: zlgcanbus
+Description: Description of zlgcanbus
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,11 @@
+<!---->
+<launch>
+    <!-- 启动location节点 -->
+    <!-- pkg：运行哪个pkg，type：可执行文件的名称，而name则是可以任意给出的，它覆盖了原有文件中ros::init指定的node name -->
+
+    <node name="socketcan_bridge_node0" pkg="socketcan_bridge" type="socketcan_bridge_node0" output="screen">
+        <param name="can_device"  type="str" value="can0" />
+        <param name="sent_messages"  type="str" value="can0_sent_messages" />
+        <param name="received_messages"  type="str" value="can0_received_messages" />
+    </node>
+</launch>

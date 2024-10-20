@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xining095/Carmaker/smartcar/miniEV_grad/src/canbus/zlgcanbus/include/zlgcanbus/canbus/can.h
+linux/types.h
+-
+linux/socket.h
+-
+
+/home/xining095/Carmaker/smartcar/miniEV_grad/src/canbus/zlgcanbus/include/zlgcanbus/canbus/controlcan.h
+
+/home/xining095/Carmaker/smartcar/miniEV_grad/src/canbus/zlgcanbus/include/zlgcanbus/candriver/candriver.c
+candriver.h
+/home/xining095/Carmaker/smartcar/miniEV_grad/src/canbus/zlgcanbus/include/zlgcanbus/candriver/candriver.h
+controlcan.h
+/home/xining095/Carmaker/smartcar/miniEV_grad/src/canbus/zlgcanbus/include/zlgcanbus/candriver/controlcan.h
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+assert.h
+-
+
+/home/xining095/Carmaker/smartcar/miniEV_grad/src/canbus/zlgcanbus/include/zlgcanbus/candriver/candriver.h
+can.h
+/home/xining095/Carmaker/smartcar/miniEV_grad/src/canbus/zlgcanbus/include/zlgcanbus/candriver/can.h
+stdbool.h
+-
+

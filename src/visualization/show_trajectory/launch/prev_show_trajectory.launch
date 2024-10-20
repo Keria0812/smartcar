@@ -1,0 +1,14 @@
+<!---->
+<launch>
+    <!-- 启动visualization节点 -->
+    <!-- pkg：运行哪个pkg，type：可执行文件的名称，而name则是可以任意给出的，它覆盖了原有文件中ros::init指定的node name -->
+
+    <node name="show_trajectory" pkg="show_trajectory" type="by_marker_list" output="screen">
+    </node>
+    
+    <include file="$(find vehicle_show)/launch/lexus.launch">
+    </include>
+
+    <!--启动rviz-->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find show_trajectory)/launch/conf.rviz" required="false" />
+</launch>

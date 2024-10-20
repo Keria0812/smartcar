@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="debug_pathfollow" type="bool" default="false" />
+    <group ns="planning">
+        <param name="planning_config_path"  type="str" value="$(find planning)/config/configs.yaml" />
+    </group>
+
+    <param name="debug_pathfollow" type="bool" value="$(arg debug_pathfollow)" />
+    <param name="planning_by_learning" type="bool" value="false" />
+
+    
+
+
+    <!-- 是否使用预测模块 -->
+    <param name="enable_forecast" type="bool" value="true" />
+
+
+    <!-- 其他launch文件传入的参数 -->
+    <arg name="is_lattice_planner" default="2"/>
+    <arg name="is_lateral_optimization" default="false"/>
+    <!-- <arg name="hdmap_file"/> -->
+
+    <!-- 模拟动态障碍物的加载文件，这些都是录好的轨迹点，播放这个文件就可以实现障碍物移动 -->
+    <!-- <param name="obstacle_test_path"  value="$(find planning)/files"/> -->
+
+    <!-- 1是纯frenet规划，2是lattice规划，3是em规划 -->
+    <param name="use_lattice_planner"  value="$(arg is_lattice_planner)"/>
+    <!-- 是否使用二次规划，选择了lattice规划，选择这个才有效果 -->
+    <param name="use_lateral_optimization"  value="$(arg is_lateral_optimization)"/>
+    <!-- <param name="hdmap_file_path" value="$(arg hdmap_file)" /> -->
+
+    <!-- 在frenet规划下的参数设置，lattice规划不用这些 -->
+    <!-- COLLISION_CHECK_THRESHOLD 距离障碍物的最短距离 -->
+    <param name="COLLISION_CHECK_THRESHOLD" type="double" value="1.2" />
+    <!-- 调整轨迹的长度 -->
+    <param name="MaxT" type="double" value="11" />
+    <param name="MinT" type="double" value="9" />
+     <!-- 轨迹在离障碍物很远的地方，go_Sizes为到这个点更新轨迹 set_Sizes为更新轨迹的位置，为保持连续，更新点在判别点前面 -->
+    <param name="go_Sizes" type="int"  value="7" />
+    <param name="set_Sizes" type="int"  value="1" />
+    <!-- 与障碍物的距离阈值(可不用)-->
+    <param name="Approaching_obstacles" type="double"  value="1" />
+
+    <!-- 障碍物的有效区域，长 Eff_length 和 宽 Eff_width,还有车的前探距离 Eff_dis -->
+    <param name="Eff_length" type="double"  value="14" />
+    <param name="Eff_width" type="double"  value="5" />
+    <param name="Eff_dis" type="double"  value="6" />
+    
+    <param name="reference_line_id" type="int"  value="1" />
+
+    <param name="number_of_cpu_cores" type="int"  value="16" />
+
+    
+
+    <!-- 节点 -->
+    <node pkg="planning" type="planning_node" name="planning" output="screen" respawn="true" >
+    <!-- <node pkg="planning" type="planning_record_node" name="planning" output="screen" respawn="true" > -->
+
+    <!-- <node pkg="planning" type="planning_node" name="planning" output="screen" launch-prefix="gnome-terminal -x gdb -ex run args ">    -->
+
+        <!-- <remap from="/Obstacles" to="/talker" />         -->
+    
+
+    </node>
+
+</launch> 

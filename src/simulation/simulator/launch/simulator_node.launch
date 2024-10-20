@@ -1,0 +1,15 @@
+<launch>
+    <!-- 启动simulator节点 -->
+    <!-- pkg：运行哪个pkg，type：可执行文件的名称，而name则是可以任意给出的，它覆盖了原有文件中ros::init指定的node name -->
+    <arg name="arg1" default="1" />
+    <rosparam command="load" file="$(find simulator)/config/Tesla.yaml" ns="Tesla"/>
+
+    <node name="simulator" pkg="simulator" type="simulator_node" output="screen" >
+        <!-- drivemode 0:manul 1:auto 2:ipgdrive -->
+        <param name="drivemode"  type="int" value="$(arg arg1)" />
+        <param name="des_ip" type="string" value="127.0.0.1" />
+        <param name="sou_ip" type="string" value="127.0.0.1" />
+        <!-- <param name="des_ip" type="string" value="192.168.100.1" />
+        <param name="sou_ip" type="string" value="192.168.100.100" /> -->
+    </node>
+</launch>

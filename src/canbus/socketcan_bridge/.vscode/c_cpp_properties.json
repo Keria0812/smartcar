@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/chenjian/catkin_project/smartcar/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/gps_bridge/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/path_planning/path_planning/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/canbus/socketcan_bridge/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/canbus/socketcan_interface/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/path_planning/track_publisher/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

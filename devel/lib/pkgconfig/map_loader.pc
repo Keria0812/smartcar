@@ -1,0 +1,8 @@
+prefix=/home/xining095/Carmaker/smartcar/miniEV_grad/devel
+
+Name: map_loader
+Description: Description of map_loader
+Version: 0.1.0
+Cflags: -I/home/xining095/Carmaker/smartcar/miniEV_grad/src/common/map_loader/include -I/usr/include
+Libs: -L${prefix}/lib /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+Requires: geometry_msgs std_msgs tf2_geometry_msgs visualization_msgs

@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/chenjian/catkin_project/smartcar/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/ros_canopen/canopen_402/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/ros_canopen/canopen_chain_node/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/ros_canopen/canopen_master/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/ros_canopen/canopen_motor_node/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/gps_umd/gps_common/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/ros_canopen/socketcan_bridge/include/**",
+        "/home/chenjian/catkin_project/smartcar/src/ros_canopen/socketcan_interface/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
