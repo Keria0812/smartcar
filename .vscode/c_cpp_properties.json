@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/gps_bridge/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/common/lanelet2_extension/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/map/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/common/map_loader/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/prediction/motion_predictor/naive_motion_predict/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/pathfollower/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/planning/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/simulation/simulator/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/canbus/socketcan_bridge/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/canbus/socketcan_interface/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn/src/vehicle_controlev/include/**",
+        "/home/xining095/Carmaker/smartcar/miniEV_grad_xn_xn/src/canbus/zlgcanbus/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++17",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+    }
+  ],
+  "version": 4
+}

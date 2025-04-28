@@ -1,8 +1,0 @@
-prefix=/home/xining095/Carmaker/smartcar/miniEV_grad/devel
-
-Name: smartcar_msgs
-Description: Description of smartcar_msgs
-Version: 1.11.0
-Cflags: -I/home/xining095/Carmaker/smartcar/miniEV_grad/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime std_msgs geometry_msgs sensor_msgs jsk_recognition_msgs

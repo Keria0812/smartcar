@@ -1,8 +1,0 @@
-prefix=/home/xining095/Carmaker/smartcar/miniEV_grad/install
-
-Name: vehicle_show
-Description: Description of vehicle_show
-Version: 1.11.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

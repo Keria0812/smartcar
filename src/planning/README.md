@@ -2,8 +2,7 @@
  * @Copyright: jinxiaoxin@whut.edu.cn
  * @Author: jinxiaoxin235
  * @Date: 2024-01-13 21:20:23
- * @LastEditors: jinxiaoxin235
- * @LastEditTime: 2024-01-13 21:23:26
+ * @LastEditors: xining095
  * @FilePath: /miniEV/src/planning/README.md
 -->
 - 成本函数

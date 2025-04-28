@@ -3,8 +3,8 @@
  # @Copyright: jinxiaoxin@whut.edu.cn
  # @Author: jinxiaoxin235
  # @Date: 2023-07-24 19:29:03
- # @LastEditors: jinxiaoxin235
- # @LastEditTime: 2023-07-24 19:35:46
+ # @LastEditors: xining095
+ # @LastEditTime: 20250428
  # @FilePath: /miniEV/miniEV_start.sh
 ### 
 #sleep 1

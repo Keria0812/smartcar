@@ -1,8 +1,0 @@
-prefix=/home/xining095/Carmaker/smartcar/miniEV_grad/install
-
-Name: vehicle_controlev
-Description: Description of vehicle_controlev
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

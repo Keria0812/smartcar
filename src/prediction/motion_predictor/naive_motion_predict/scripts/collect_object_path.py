@@ -22,6 +22,7 @@ Describe:
 '''
 from matplotlib.pyplot import title
 import rospy, math, random, cv_bridge, cv2
+import rospy
 import message_filters
 from cv_bridge import CvBridge,CvBridgeError
 from sensor_msgs.msg import Image, CameraInfo
@@ -32,7 +33,7 @@ import argparse
 from smartcar_msgs.msg import DetectedObjectArray
 
 save_id = 1
-save_name = 'scripts/car_' + str(save_id) + '.csv'
+save_name = 'scripts/collect/car_' + str(save_id) + '.csv'
 save_name = rospkg.RosPack().get_path('naive_motion_predict') + '/' + save_name
 
 f = open(save_name, 'w')

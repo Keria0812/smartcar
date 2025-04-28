@@ -1,8 +1,0 @@
-prefix=/home/xining095/Carmaker/smartcar/miniEV_grad/install
-
-Name: pathfollower
-Description: Description of pathfollower
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp smartcar_msgs std_msgs

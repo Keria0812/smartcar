@@ -1,8 +1,0 @@
-prefix=/home/xining095/Carmaker/smartcar/miniEV_grad/devel
-
-Name: naive_motion_predict
-Description: Description of naive_motion_predict
-Version: 1.11.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp sensor_msgs smartcar_msgs tf

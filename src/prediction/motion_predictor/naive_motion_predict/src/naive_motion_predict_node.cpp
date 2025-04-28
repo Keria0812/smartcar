@@ -18,6 +18,7 @@
 
 int main(int argc, char** argv)
 {
+  setlocale(LC_ALL,"");
   ros::init(argc, argv, "naive_motion_predict");
   NaiveMotionPredict node;
   ros::spin();

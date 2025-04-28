@@ -1,8 +1,0 @@
-prefix=/home/xining095/Carmaker/smartcar/miniEV_grad/devel
-
-Name: show_trajectory
-Description: Description of show_trajectory
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

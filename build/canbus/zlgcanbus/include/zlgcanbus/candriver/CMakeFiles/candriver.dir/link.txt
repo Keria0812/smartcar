@@ -1,1 +1,0 @@
-/usr/bin/cc -fPIC   -shared -Wl,-soname,libcandriver.so -o /home/xining095/Carmaker/smartcar/miniEV_grad/devel/lib/libcandriver.so CMakeFiles/candriver.dir/candriver.c.o   -L/home/xining095/Carmaker/smartcar/miniEV_grad/src/canbus/zlgcanbus/include/zlgcanbus/lib  -Wl,-rpath,/home/xining095/Carmaker/smartcar/miniEV_grad/src/canbus/zlgcanbus/include/zlgcanbus/lib -lusbcan 
